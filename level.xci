@@ -1,15 +1,165 @@
-# XCI Level Template
+# XCI Logo animation
 
-# Uncomment below when/if you have level bitmap and/or music
 #bitmap bitmap.data
 #music music.vgm
 
 init
-# Put initial animation here
-end_anim
 
-first
-# Put first-time-only animation here
-end_anim
+gif_start
 
-# Put triggers here
+sprite_frames 1 0  7
+sprite 1 280 12
+sprite_frames 2 0  8
+sprite 2 216 12
+sprite_frames 3 0  9
+sprite 3 152 12
+sprite_frames 4 0  10
+sprite 4 88 12
+sprite_frames 5 0  11
+sprite 5 24 12
+sprite_frames 6 0  12
+sprite 6 280 188
+sprite_frames 7 0  13
+sprite 7 216 188
+sprite_frames 8 0  14
+sprite 8 152 188
+sprite_frames 9 0  15
+sprite 9 88 188
+sprite_frames 10 0  16
+sprite 10 24 188
+
+sprite_frames 11 0  1
+sprite 11 52 24
+sprite_frames 12 0  1
+sprite 12 98 24
+sprite_frames 13 0  1
+sprite 13 144 24
+sprite_frames 14 0  1
+sprite 14 160 24
+sprite_frames 15 0  1
+sprite 15 206 24
+sprite_frames 16 0  6
+sprite 16 252 24
+sprite_frames 17 0  2
+sprite 17 52 100
+sprite_frames 18 0  1
+sprite 18 88 100
+sprite_frames 19 0  1
+sprite 19 114 100
+sprite_frames 20 0  1
+sprite 20 190 100
+sprite_frames 21 0  1
+sprite 21 216 100
+sprite_frames 22 0  5
+sprite 22 252 100
+sprite_frames 23 0  3
+sprite 23 52 176
+sprite_frames 24 0  3
+sprite 24 98 176
+sprite_frames 25 0  3
+sprite 25 144 176
+sprite_frames 26 0  3
+sprite 26 160 176
+sprite_frames 27 0  3
+sprite 27 206 176
+sprite_frames 28 0  4
+sprite 28 252 176
+
+sprite_frames 29 15 1
+sprite 29 112 92
+sprite_frames 30 15 1
+sprite 30 112 108
+sprite_frames 31 15 1
+sprite 31 184 92
+sprite_frames 32 15 1
+sprite 32 184 108
+
+wait 60
+
+sprite_move 11  2 60  1 1
+sprite_move 12  4 30  1 2
+sprite_move 13  2 60  0 1
+sprite_move 14  2 60  0 1
+sprite_move 15  4 30  -1 2
+sprite_move 16  2 60  -1 1
+sprite_move 17  2 60  1 0
+sprite_move 18  3 40  1 0
+sprite_move 19  4 30  1 0
+sprite_move 20  4 30  -1 0
+sprite_move 21  3 40  -1 0
+sprite_move 22  2 60  -1 0
+sprite_move 23  2 60  1 -1
+sprite_move 24  4 30  1 -2
+sprite_move 25  2 60  0 -1
+sprite_move 26  2 60  0 -1
+sprite_move 27  4 30  -1 -2
+sprite_move 28  2 60  -1 -1
+
+wait 180
+
+sprite_move 1  2  80 -2 1
+sprite_move 2  2  80 -1 1
+sprite_move 3  2  80 0 1
+sprite_move 4  2  80 1 1
+sprite_move 5  2  80 2 1
+sprite_move 6  2  80 -2 -1
+sprite_move 7  2  80 -1 -1
+sprite_move 8  2  80 0 -1
+sprite_move 9  2  80 1 -1
+sprite_move 10  2  80 2 -1
+
+wait 220
+
+tiles 0  14 11  0 0 0 2 3 4
+tiles 0  14 12  0 0 0 5 6 7
+tiles 12 14 13  101 88 116 114 101 109 101 108 121
+tiles 12 14 14  67 111 109 112 97 99 116
+tiles 12 14 15  73 110 116 101 114 112 114 101 116 101 114
+
+sprite_move 1 2 72 0 -1
+sprite_move 2 2 72 0 -1
+sprite_move 3 2 72 0 -1
+sprite_move 4 2 72 0 -1
+sprite_move 5 2 72 0 -1
+sprite_move 11 2 72 0 -1
+sprite_move 12 2 72 0 -1
+sprite_move 13 2 72 0 -1
+sprite_move 14 2 72 0 -1
+sprite_move 15 2 72 0 -1
+sprite_move 16 2 72 0 -1
+sprite_move 17 2 72 0 -1
+sprite_move 18 2 72 0 -1
+sprite_move 19 2 72 0 -1
+sprite_move 29 2 72 0 -1
+sprite_move 30 2 72 0 -1
+
+sprite_move 6 2 72 0 1
+sprite_move 7 2 72 0 1
+sprite_move 8 2 72 0 1
+sprite_move 9 2 72 0 1
+sprite_move 10 2 72 0 1
+sprite_move 20 2 72 0 1
+sprite_move 21 2 72 0 1
+sprite_move 22 2 72 0 1
+sprite_move 23 2 72 0 1
+sprite_move 24 2 72 0 1
+sprite_move 25 2 72 0 1
+sprite_move 26 2 72 0 1
+sprite_move 27 2 72 0 1
+sprite_move 28 2 72 0 1
+sprite_move 31 2 72 0 1
+sprite_move 32 2 72 0 1
+
+wait 120
+
+text 1 Create your own adventure game
+text 1 for the Commander X16
+wait 30
+text 1 Learn more at
+text 3 github.com/SlithyMatt/x16-xci
+
+wait 180
+
+gif_pause
+
+end_anim
